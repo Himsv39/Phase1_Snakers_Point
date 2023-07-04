@@ -1,0 +1,341 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+html {
+  height: 100%;
+}
+body {
+  height: 100%;
+}
+.container {
+  display: grid;
+  grid-template-columns: 250px 1fr 300px;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* menu design */
+#menu {
+  background-color: whitesmoke;
+}
+.brand-logo {
+  padding: 0 20px;
+}
+.brand-logo img {
+  height: 120px;
+  width: 120px;
+  margin-top: -20px;
+}
+.menu-items a {
+  display: block;
+  text-decoration: none;
+  font-size: 20px;
+  margin: 10px 0px;
+  padding: 8px 30px;
+  color: blueviolet;
+  font-weight: 700;
+}
+.menu-items a:hover {
+  background-color: rgb(250, 218, 212);
+}
+/* menu design */
+
+/* food container css */
+#food-container {
+  overflow: scroll;
+  overflow-x: hidden;
+  box-sizing: content-box;
+}
+
+/* preparing header here, displaying as flex  */
+/* need space between icons, so justify-content as space between */
+#header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 10px;
+  position: sticky;
+  top: 0;
+  background: gainsboro;
+  z-index: 1;
+}
+
+.your-address {
+  border: 1px solid indianred;
+  border-radius: 5px;
+  color: indianred;
+  padding: 5px 10px;
+  width: 150px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.add-box i {
+  font-size: 16px;
+}
+
+.utils i {
+  font-size: 16px;
+  color: indianred;
+  border: 1px solid indianred;
+  border-radius: 15px;
+  padding: 8px 16px;
+  cursor: pointer;
+  margin: 0px 15px;
+}
+
+.user {
+  font-size: 15px;
+  color: indianred;
+  border: 1px solid indianred;
+  border-radius: 15px;
+  padding: 8px 16px;
+  cursor: pointer;
+  margin: 36px 20px;
+  width: 120px;
+}
+
+.utils i:active {
+  color: white;
+  background-color: crimson;
+}
+
+#biryani {
+  margin-top: 40px;
+  border-radius: 15px;
+  margin: 11px;
+}
+#category-name {
+  margin: 10px;
+  font-size: 30px;
+}
+#item-card {
+  height: 210px;
+  width: 180px;
+  padding: 10px;
+  margin: 10px;
+  display: inline-block;
+  border-radius: 5px;
+  background-color: rgb(253, 221, 226);
+  cursor: pointer;
+  transition: 0.5s all ease-in-out;
+}
+#item-card img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: auto;
+  margin-bottom: 10px;
+  display: block;
+  transition: 0.5s LL ease-in-out;
+}
+#item-card img:hover {
+  transform: scale(1.1);
+}
+#card-top {
+  display: flex;
+  margin: 4px 0;
+  justify-content: space-between;
+}
+#rating {
+  color: goldenrod;
+  background-color: black;
+  padding: 5px;
+  border-radius: 35px;
+  font-size: 14px;
+  font-weight: 300;
+}
+.fa-heart-o {
+  background-color: white;
+  padding: 5px;
+  border-radius: 50%;
+}
+
+#paneer #item-card,
+#vegetable #item-card {
+  background-color: #daf7a6;
+}
+
+#chinese #item-card,
+#southIndian #item-card {
+  background-color: #add8e6;
+}
+
+#item-name {
+  font-size: 15px;
+  font-weight: bold;
+  margin-top: 5px;
+  color: lightcoral;
+}
+#item-price {
+  font-size: 15px;
+  font-weight: bold;
+  margin-top: 5px;
+  color: lightcoral;
+}
+/* preparing header here, displaying as flex  */
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* food container css */
+#cart {
+  background-color: whitesmoke;
+  overflow-y: scroll;
+}
+.taste-header {
+  position: sticky;
+  top: 0;
+  background-color: whitesmoke;
+}
+.list-card {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: 0.3s all ease-in-out;
+}
+.list-card img {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+.list-card:hover {
+  background-color: rgb(255, 216, 222);
+}
+.list-card:hover img {
+  transform: scale(1.2s);
+}
+.item-menu {
+  color: indianred;
+  font-size: 30px;
+  margin: 0;
+  background-color: whitesmoke;
+  font-weight: 400;
+}
+.list-name {
+  font-size: 20px;
+  margin: 0 10px;
+  text-decoration: none;
+  text-transform: capitalize;
+  color: rgb(94, 43, 43);
+}
+.border {
+  width: 80px;
+  height: 4px;
+  background-color: gold;
+  margin: 3px 0;
+  border-radius: 2px;
+}
+.food-items {
+  display: none;
+}
+/* .food-items {
+  display: none;
+}
+#category-list {
+  display: none;
+} */
+
+.cart-toggle {
+  display: none;
+}
+
+#cart-page {
+  background-color: white;
+  margin: 40px 10px;
+  padding: 20px 30px;
+  position: relative;
+}
+#cart-title {
+  font-size: 30px;
+  margin: 0;
+  color: indianred;
+}
+#cart-page table {
+  width: 100%;
+  margin: 20px;
+  text-align: center;
+}
+
+#cart-page table thead td {
+  font-size: 20px;
+  padding-bottom: 10px;
+  font-weight: 600;
+}
+#cart-page table tbody td {
+  padding: 10px 0;
+  font-size: 20px;
+}
+#cart-page table button {
+  outline: none;
+  border: none;
+  font-size: 16px;
+  background: none;
+  background-color: lightcoral;
+  color: white;
+  border-radius: 3px;
+  cursor: pointer;
+  margin: 0 5px;
+  padding: 3px 8px;
+}
+#cart-page table tbody img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+#m-total-amount {
+  display: none;
+}
+
+#checkout {
+  text-align: center;
+  margin: 40px auto;
+  border-radius: 5px;
+  background: white;
+  padding: 10px 20px;
+}
+#checkout p {
+  margin: 10px 0;
+  /* float: right; */
+}
+#total-item,
+#total-price {
+  font-size: 25px;
+  color: indianred;
+}
+
+.cart-btn {
+  outline: none;
+  border: none;
+  background-color: crimson;
+  color: white;
+  padding: 10px 25px;
+  border-radius: 25px;
+  font-size: 18px;
+  text-transform: uppercase;
+  bottom: 30px;
+  margin: 15px 0;
+  cursor: pointer;
+}
+.cart-btn:active {
+  color: crimson;
+  background: none;
+  border: 1px solid crimson;
+}
+#delivery {
+  font-size: 20px;
+  color: limegreen;
+}
+
+.toggle-heart {
+  color: white;
+  background-color: orangered;
+}
